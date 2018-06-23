@@ -19,7 +19,7 @@
         android:text="@string/eliminar_libro"
         android:textAlignment="center"
         android:textColor="#ffff"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
