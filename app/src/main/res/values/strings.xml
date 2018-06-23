@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Biblioteca</string>
+    <string name="titulo">Bienvenido a AppBlibic</string>
+    <string name="titulo_agregar">Ingrese su libro</string>
+    <string name="todos_libros">Libros de AppBlibic</string>
+    <string name="eliminar_libro">Escoja el libro a eliminar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="Backup">DBBackup</string>
+    <string name="buscar_libro">Escoja el libro a buscar</string>
+    <string name="editar_libro">Escoja su libro a editar</string>
+    <string name="titulo_l">Titulo libro</string>
+    <string name="autor_l">Autor libro</string>
+    <string name="area_l">Area libro</string>
+    <string name="editorial_l">Editorial libro</string>
+    <string name="año_libro">Año libro</string>
+    <string name="button">Actualizar</string>
+
+
+    <string-array name="areas">
+        <item>Historia</item>
+        <item>Matemática</item>
+        <item>Español</item>
+        <item>Íngles</item>
+    </string-array>
+</resources>

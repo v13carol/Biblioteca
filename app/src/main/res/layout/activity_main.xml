@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/library"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/titulo"
+        android:textAlignment="center"
+        android:textColor="#ffff"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/AgregarButton"
+        android:layout_width="147dp"
+        android:layout_height="105dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/colorAccent"
+        app:layout_constraintEnd_toStartOf="@+id/BuscarButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/ic_account_plus"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/BuscarButton"
+        android:layout_width="153dp"
+        android:layout_height="105dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/ic_search_black_24dp"
+        tools:ignore="VectorDrawableCompat" />
+
+
+    <ImageButton
+        android:id="@+id/EliminarButton"
+        android:layout_width="151dp"
+        android:layout_height="105dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:layout_marginTop="24dp"
+        android:background="#fbc843"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BuscarButton"
+        app:srcCompat="@drawable/ic_delete"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/EditarButton"
+        android:layout_width="146dp"
+        android:layout_height="105dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:background="#fdc943"
+        app:layout_constraintEnd_toStartOf="@+id/EliminarButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AgregarButton"
+        app:srcCompat="@drawable/ic_pencil"
+        tools:ignore="VectorDrawableCompat" />
+
+
+    <ImageButton
+        android:id="@+id/BackUpButton"
+        android:layout_width="146dp"
+        android:layout_height="104dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/holo_green_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/TodosButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditarButton"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_backup"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/TodosButton"
+        android:layout_width="151dp"
+        android:layout_height="104dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/holo_green_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EliminarButton"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_library_books"
+        tools:ignore="VectorDrawableCompat" />
+</android.support.constraint.ConstraintLayout>
