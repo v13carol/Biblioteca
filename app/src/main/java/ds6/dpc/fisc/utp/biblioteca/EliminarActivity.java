@@ -55,8 +55,7 @@ public class EliminarActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 buscar_libro();
-                titulo.setVisibility(View.VISIBLE);
-                eliminar_boton.setVisibility(View.VISIBLE);
+
             }
         });
 
@@ -109,6 +108,10 @@ public class EliminarActivity extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 db.delete(TABLE_NAME, ISBN+" || "+ID+"=? ",parametros);
+
+                titulo.setVisibility(View.VISIBLE);
+                eliminar_boton.setVisibility(View.VISIBLE);
+
                 limpiar();
                 db.close();
             }

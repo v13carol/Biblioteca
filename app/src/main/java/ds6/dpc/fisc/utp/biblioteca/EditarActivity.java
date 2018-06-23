@@ -57,16 +57,6 @@ public class EditarActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                if(isbn != null)
-                {
-                    titulo.setVisibility(View.VISIBLE);
-                    autor.setVisibility(View.VISIBLE);
-                    area.setVisibility(View.VISIBLE);
-                    editorial.setVisibility(View.VISIBLE);
-                    año.setVisibility(View.VISIBLE);
-                    editar_boton.setVisibility(View.VISIBLE);
-                }
-
                 buscando_libro();
 
             }
@@ -131,6 +121,17 @@ public class EditarActivity extends AppCompatActivity {
                     values.put(AÑO,año.getText().toString());
 
                     db.update(TABLE_NAME,values,ISBN+"||"+ID+"=?",parametros);
+
+                    if(isbn != null)
+                    {
+                        titulo.setVisibility(View.VISIBLE);
+                        autor.setVisibility(View.VISIBLE);
+                        area.setVisibility(View.VISIBLE);
+                        editorial.setVisibility(View.VISIBLE);
+                        año.setVisibility(View.VISIBLE);
+                        editar_boton.setVisibility(View.VISIBLE);
+                    }
+
                     limpiar();
                     db.close();
 

@@ -51,10 +51,6 @@ public class BuscarActivity extends AppCompatActivity {
         boton_buscar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               if(buscar_libro != null)
-               {
-                   libro.setVisibility(View.VISIBLE);
-               }
 
                 BuscandoLibro();
             }
@@ -78,6 +74,12 @@ public class BuscarActivity extends AppCompatActivity {
                     "AREA:  "+cursor.getString(2) + "\n" +
                     "EDITORIAL:  "+cursor.getString(3) + "\n" +
                     "AÑO: "+cursor.getString(4));
+
+                if(buscar_libro != null)
+                {
+                    libro.setVisibility(View.VISIBLE);
+                }
+                
             cursor.close();
         }
         catch(Exception e)
