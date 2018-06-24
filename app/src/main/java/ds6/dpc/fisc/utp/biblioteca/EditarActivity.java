@@ -101,6 +101,13 @@ public class EditarActivity extends AppCompatActivity {
 
         if(isbn != null)
         {
+            titulo.setVisibility(View.VISIBLE);
+            autor.setVisibility(View.VISIBLE);
+            area.setVisibility(View.VISIBLE);
+            editorial.setVisibility(View.VISIBLE);
+            año.setVisibility(View.VISIBLE);
+            editar_boton.setVisibility(View.VISIBLE);
+
 
             AlertDialog.Builder msg = new AlertDialog.Builder(this);
             msg.setMessage("¿Está seguro que quiere editar este libro?");
@@ -122,15 +129,6 @@ public class EditarActivity extends AppCompatActivity {
 
                     db.update(TABLE_NAME,values,ISBN+"||"+ID+"=?",parametros);
 
-                    if(isbn != null)
-                    {
-                        titulo.setVisibility(View.VISIBLE);
-                        autor.setVisibility(View.VISIBLE);
-                        area.setVisibility(View.VISIBLE);
-                        editorial.setVisibility(View.VISIBLE);
-                        año.setVisibility(View.VISIBLE);
-                        editar_boton.setVisibility(View.VISIBLE);
-                    }
 
                     limpiar();
                     db.close();

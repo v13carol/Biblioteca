@@ -97,6 +97,10 @@ public class EliminarActivity extends AppCompatActivity {
     }
     private void eliminar_libro() {
 
+
+        titulo.setVisibility(View.VISIBLE);
+        eliminar_boton.setVisibility(View.VISIBLE);
+
         AlertDialog.Builder msg = new AlertDialog.Builder(this);
         msg.setMessage("¿Está seguro que quiere eliminar este libro?");
         msg.setTitle("Eliminando Libro...");
@@ -108,10 +112,6 @@ public class EliminarActivity extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 db.delete(TABLE_NAME, ISBN+" || "+ID+"=? ",parametros);
-
-                titulo.setVisibility(View.VISIBLE);
-                eliminar_boton.setVisibility(View.VISIBLE);
-
                 limpiar();
                 db.close();
             }
